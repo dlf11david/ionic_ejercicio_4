@@ -15,7 +15,7 @@
       <ion-card-title>Información</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Aplicación desarrollada por David López
+      Aplicación desarrollada por {{autor.name}}
     </ion-card-content>
     <ion-item button detail [routerLink]="['/curriculum']">
       <ion-icon name="book" slot="start" size="small"></ion-icon>
@@ -23,15 +23,15 @@
     </ion-item>
     <ion-item href="mailto:email@email.com" detail>
       <ion-icon name="mail" slot="start" size="small"></ion-icon>
-      <ion-label><small>Correo: email@email.com</small></ion-label>
+      <ion-label><small>Correo: {{autor.email}}</small></ion-label>
     </ion-item>
     <ion-item href="https://twitter.com/moviles_ua" detail>
       <ion-icon name="logo-twitter" slot="start" size="small"></ion-icon>
-      <ion-label><small>Twitter: @twitter</small></ion-label>
+      <ion-label><small>Twitter: {{autor.twitter}}</small></ion-label>
     </ion-item>
     <ion-item href="tel:999888777" detail>
       <ion-icon name="call" slot="start" size="small"></ion-icon>
-      <ion-label><small>Teléfono: 999888777</small></ion-label>
+      <ion-label><small>Teléfono: {{autor.phone}}</small></ion-label>
     </ion-item>
     </ion-card>
 </ion-content>
