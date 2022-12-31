@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PeliculasService } from 'src/app/services/peliculas.service';
+
 
 @Component({
   selector: 'app-videoclub',
@@ -8,7 +10,13 @@ import { Router } from '@angular/router';
 })
 export class VideoclubPage implements OnInit {
 
-  constructor(private router: Router) { }
+  listaPeliculas: any[];
+
+  constructor(private router: Router, private peliculas: PeliculasService) { 
+
+    this.listaPeliculas = peliculas.getPeliculas();
+
+  }
 
   verPaginaDetalle(id: any): void {
     this.router.navigate(['/detalle', id]);
