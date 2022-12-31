@@ -3,21 +3,21 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>detalle</ion-title>
+    <ion-title>{{pelicula.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-card>
-    <ion-img src="assets/pulp_fiction.jpg"></ion-img>
+    <ion-img src="assets/{{pelicula.poster}}"></ion-img>
     <ion-card-header>
-      <ion-card-subtitle>Pulp Fiction</ion-card-subtitle>
+      <ion-card-subtitle>{{pelicula.title}}</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <p><b>Director: </b>Quentin Tarantino</p>
-      <p><b>Año: </b>1994</p>
-      <p><b>Sinopsis: </b>Jules y Vincent, dos asesinos a sueldo...</p>
+      <p><b>Director: </b>{{pelicula.director}}</p>
+      <p><b>Año: </b>{{pelicula.year}}</p>
+      <p><b>Sinopsis: </b>{{pelicula.synopsis}}</p>
     </ion-card-content>
     </ion-card>
 

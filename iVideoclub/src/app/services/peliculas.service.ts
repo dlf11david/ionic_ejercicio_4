@@ -21,35 +21,35 @@ export class PeliculasService {
         year: '1972',
         director: 'Francis Ford Coppola',
         poster: 'el_padrino.jpg',
-        synopsis: 'aaaa'
+        synopsis: 'Synopsis de ejemplo'
       },
       {
         title: 'El padrino. Parte II',
         year: '1974',
         director: 'Francis Ford Coppola',
         poster: 'el_padrino_2.jpg',
-        synopsis: 'aaaa'
+        synopsis: 'Synopsis de ejemplo'
       },
       {
         title: 'La lista de Schindler',
         year: '1993',
         director: 'Steven Spielberg',
         poster: 'la_lista_de_schindler.jpg',
-        synopsis: 'aaaa'
+        synopsis: 'Synopsis de ejemplo'
       },
       {
         title: 'Pulp Fiction',
         year: '1994',
         director: 'Quentin Tarantino',
         poster: 'pulp_fiction.jpg',
-        synopsis: 'aaaa'
+        synopsis: 'Synopsis de ejemplo'
       },
       {
         title: 'Cadena perpetua',
         year: '1994',
         director: 'Frank Darabont',
         poster: 'cadena_perpetua.jpg',
-        synopsis: 'aaaa'
+        synopsis: 'Synopsis de ejemplo'
       }
     ]
       
@@ -58,5 +58,10 @@ export class PeliculasService {
   getPeliculas(): any[] {
     return this.peliculas;
   }
+
+  getPelicula(id: number): any {
+    return this.peliculas[id];
+  }
+
 
 }
