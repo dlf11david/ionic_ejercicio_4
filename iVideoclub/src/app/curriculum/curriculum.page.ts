@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurriculumPage implements OnInit {
 
-  constructor() { }
+  listaTrabajos: {fecha: string, desc: string}[];
+
+  constructor() { 
+    this.listaTrabajos = [
+      {fecha: '2022-actualidad', desc: 'Estudiante del máster en desarrollo de aplicaciones'}, 
+      {fecha: 'antes-2022', desc: 'No estudiante del máster en desarrollo de aplicaciones'}
+    ]
+  }
 
   ngOnInit() {
   }
